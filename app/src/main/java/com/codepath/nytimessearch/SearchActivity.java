@@ -1,9 +1,7 @@
 package com.codepath.nytimessearch;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
@@ -12,9 +10,16 @@ import android.widget.GridView;
 import android.widget.Toast;
 
 import com.codepath.nytimessearch.interfaces.ApiEndpointInterface;
+import com.codepath.nytimessearch.models.ApiResponse;
+import com.codepath.nytimessearch.models.News;
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.trello.rxlifecycle.components.support.RxAppCompatActivity;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -24,22 +29,25 @@ import retrofit2.adapter.rxjava.HttpException;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 import rx.Observable;
+import rx.Subscriber;
 import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
-public class SearchActivity extends AppCompatActivity {
+public class SearchActivity extends RxAppCompatActivity {
 
     @BindView(R.id.etQuery)
     EditText etQuery;
     @BindView(R.id.gvResults)
     GridView gvResults;
 
-    private String NYTIMES_SEARCH_API_URL = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
-    private String NYTIMES_SEARCH_API_KEY = getString(R.string.nytimes_search_api_key);
+    private String NYTIMES_SEARCH_API_URL = "https://api.nytimes.com/svc/search/v2/";
+    private String NYTIMES_SEARCH_API_KEY;
 
     private Subscription subscription;
     private ApiEndpointInterface apiService;
+
+    private Map<String, String> filter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +56,8 @@ public class SearchActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        NYTIMES_SEARCH_API_KEY = getString(R.string.nytimes_search_api_key);
 
         Gson gson = new GsonBuilder()
                 .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)
@@ -97,17 +107,15 @@ public class SearchActivity extends AppCompatActivity {
         String query = etQuery.getText().toString();
         Toast.makeText(this, query, Toast.LENGTH_SHORT).show();
 
-        Observable<String> searchRequestURLStream = Observable.just("this");
-        searchRequestURLStream
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(s -> Log.d("debug", s));
+        filter = new HashMap<>();
+        filter.put("api-key", NYTIMES_SEARCH_API_KEY);
+        filter.put("q", query);
 
-        String username = "sarahjean";
-        Observable<User> call = apiService.getUser(username);
+        Observable<ApiResponse> call = apiService.getResponse(filter);
         this.subscription = call
                 .subscribeOn(Schedulers.io()) // optional if you do not wish to override the default behavior
-                .observeOn(AndroidSchedulers.mainThread()).subscribe(new Subscriber<User>() {
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Subscriber<ApiResponse>() {
                     @Override
                     public void onCompleted() {
 
@@ -123,7 +131,8 @@ public class SearchActivity extends AppCompatActivity {
                     }
 
                     @Override
-                    public void onNext(User user) {
+                    public void onNext(ApiResponse response) {
+                        List<News> newsList = response.getResponse().getNewsList();
                     }
                 });
     }
