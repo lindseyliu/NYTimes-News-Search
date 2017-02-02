@@ -1,6 +1,8 @@
 package com.codepath.nytimessearch;
 
 import android.os.Bundle;
+import android.support.v4.view.MenuItemCompat;
+import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -34,12 +36,13 @@ import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
-public class SearchActivity extends RxAppCompatActivity {
+public class SearchActivity extends RxAppCompatActivity implements SearchView.OnQueryTextListener {
 
     @BindView(R.id.etQuery)
     EditText etQuery;
     @BindView(R.id.gvResults)
     GridView gvResults;
+    SearchView searchView;
 
     private String NYTIMES_SEARCH_API_URL = "https://api.nytimes.com/svc/search/v2/";
     private String NYTIMES_SEARCH_API_KEY;
@@ -84,6 +87,10 @@ public class SearchActivity extends RxAppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_search, menu);
+        MenuItem searchItem = menu.findItem(R.id.action_search);
+        searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
+        searchView.setOnQueryTextListener(this);
+
         return true;
     }
 
@@ -92,14 +99,12 @@ public class SearchActivity extends RxAppCompatActivity {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (item.getItemId()) {
+            case R.id.action_settings:
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
-
-        return super.onOptionsItemSelected(item);
     }
 
     @OnClick(R.id.btnSearch)
@@ -135,5 +140,51 @@ public class SearchActivity extends RxAppCompatActivity {
                         List<News> newsList = response.getResponse().getNewsList();
                     }
                 });
+    }
+
+    @Override
+    public boolean onQueryTextSubmit(String query) {
+        // perform query here
+        Toast.makeText(this, query, Toast.LENGTH_SHORT).show();
+
+        filter = new HashMap<>();
+        filter.put("api-key", NYTIMES_SEARCH_API_KEY);
+        filter.put("q", query);
+
+        Observable<ApiResponse> call = apiService.getResponse(filter);
+        this.subscription = call
+                .subscribeOn(Schedulers.io()) // optional if you do not wish to override the default behavior
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Subscriber<ApiResponse>() {
+                    @Override
+                    public void onCompleted() {
+
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+                        // cast to retrofit.HttpException to get the response code
+                        if (e instanceof HttpException) {
+                            HttpException response = (HttpException)e;
+                            int code = response.code();
+                        }
+                    }
+
+                    @Override
+                    public void onNext(ApiResponse response) {
+                        List<News> newsList = response.getResponse().getNewsList();
+                    }
+                });
+
+        // workaround to avoid issues with some emulators and keyboard devices firing twice if a keyboard enter is used
+        // see https://code.google.com/p/android/issues/detail?id=24599
+        searchView.clearFocus();
+
+        return true;
+    }
+
+    @Override
+    public boolean onQueryTextChange(String newText) {
+        return false;
     }
 }
