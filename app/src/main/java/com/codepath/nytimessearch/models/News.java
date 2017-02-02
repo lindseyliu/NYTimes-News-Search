@@ -25,7 +25,7 @@ public class News {
     private String newsDesk;
     private String sectionName;
     private String subsectionName;
-    private Byline byline;
+    //private Byline byline;
     private String typeOfMaterial;
     private String id;
     private String wordCount;
@@ -152,13 +152,15 @@ public class News {
         this.subsectionName = subsectionName;
     }
 
-    public Byline getByline() {
+    /*public Byline getByline() {
         return byline;
-    }
+    }*/
 
+/*
     public void setByline(Byline byline) {
         this.byline = byline;
     }
+*/
 
     public String getTypeOfMaterial() {
         return typeOfMaterial;
