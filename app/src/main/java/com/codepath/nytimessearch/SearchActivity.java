@@ -76,7 +76,7 @@ public class SearchActivity extends RxAppCompatActivity implements SearchView.On
         adapter = new NewsAdapter(this, newsList);
         rvNews.setAdapter(adapter);
         StaggeredGridLayoutManager gridLayoutManager =
-                new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL);
+                new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
         rvNews.setLayoutManager(gridLayoutManager);
     }
 

@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.codepath.nytimessearch.R;
 import com.codepath.nytimessearch.models.Multimedium;
 import com.codepath.nytimessearch.models.News;
@@ -58,9 +59,9 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
         tvTitle.setText(news.getHeadline().getMain());
         // TODO: load thumbnail
         String thumbnailUrl = getThumbnailUrl(news.getMultimedia());
-        /*if (!thumbnailUrl.isEmpty()) {
+        if (!thumbnailUrl.isEmpty()) {
             Glide.with(mContext).load(BASE_URL + thumbnailUrl).override(300,200).fitCenter().into(holder.ivThumbnail);
-        }*/
+        }
     }
 
     @Override public int getItemCount() {
