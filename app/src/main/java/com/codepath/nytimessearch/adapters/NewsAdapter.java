@@ -79,7 +79,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
                     (medium.getType().equals("image")))
                     .map(Multimedium::getUrl)
                     .collect(Collectors.toList()));
-            return urls.get(new Random().nextInt(urls.size()));
+            return urls.size() > 0? urls.get(new Random().nextInt(urls.size())) : "";
         }
         return "";
     }

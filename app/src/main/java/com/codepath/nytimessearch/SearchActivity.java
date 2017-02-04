@@ -36,7 +36,7 @@ import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
-public class SearchActivity extends RxAppCompatActivity implements SearchView.OnQueryTextListener {
+public class SearchActivity extends RxAppCompatActivity implements SearchView.OnQueryTextListener, FilterDialogFragment.FilterDialogListener {
 
     SearchView searchView;
 
@@ -93,7 +93,6 @@ public class SearchActivity extends RxAppCompatActivity implements SearchView.On
         filter = new HashMap<>();
         filter.put("api-key", NYTIMES_SEARCH_API_KEY);
 
-        showFilterDialog();
     }
 
     @Override protected void onDestroy() {
@@ -120,6 +119,8 @@ public class SearchActivity extends RxAppCompatActivity implements SearchView.On
         switch (item.getItemId()) {
             case R.id.action_settings:
                 return true;
+            case R.id.action_filter:
+                showFilterDialog();
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -191,5 +192,12 @@ public class SearchActivity extends RxAppCompatActivity implements SearchView.On
     @Override
     public boolean onQueryTextChange(String newText) {
         return false;
+    }
+
+    @Override public void onFinishFilterDialog(String date) {
+        filter.put("begin_date", date);
+        if (filter.containsKey("q") && !filter.get("q").isEmpty()) {
+            loadNextDataFromApi(0);
+        }
     }
 }
