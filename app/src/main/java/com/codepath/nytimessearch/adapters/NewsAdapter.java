@@ -60,7 +60,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
         // TODO: load thumbnail
         String thumbnailUrl = getThumbnailUrl(news.getMultimedia());
         if (!thumbnailUrl.isEmpty()) {
-            Glide.with(mContext).load(BASE_URL + thumbnailUrl).override(300,200).fitCenter().into(holder.ivThumbnail);
+            Glide.with(mContext).load(BASE_URL + thumbnailUrl).into(holder.ivThumbnail);
         }
     }
 

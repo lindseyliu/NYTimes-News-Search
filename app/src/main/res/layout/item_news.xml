@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
-              android:layout_width="wrap_content"
+              android:layout_width="match_parent"
               android:layout_height="wrap_content"
-    android:padding="8dp">
+    android:padding="5dp"
+              android:layout_margin="5dp"
+    android:background="@color/lightBlue"
+    android:weightSum="1">
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
         android:id="@+id/ivThumbnail"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tvTitle"/>
+        android:id="@+id/tvTitle"
+        android:textStyle="bold"/>
 
 </LinearLayout>

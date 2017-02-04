@@ -8,10 +8,10 @@ import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.codepath.nytimessearch.adapters.NewsAdapter;
 import com.codepath.nytimessearch.interfaces.ApiEndpointInterface;
+import com.codepath.nytimessearch.interfaces.EndlessRecyclerViewScrollListener;
 import com.codepath.nytimessearch.models.ApiResponse;
 import com.codepath.nytimessearch.models.News;
 import com.google.gson.FieldNamingPolicy;
@@ -49,6 +49,7 @@ public class SearchActivity extends RxAppCompatActivity implements SearchView.On
 
     private ArrayList<News> newsList;
     private NewsAdapter adapter;
+    private EndlessRecyclerViewScrollListener scrollListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,6 +79,18 @@ public class SearchActivity extends RxAppCompatActivity implements SearchView.On
         StaggeredGridLayoutManager gridLayoutManager =
                 new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
         rvNews.setLayoutManager(gridLayoutManager);
+        scrollListener = new EndlessRecyclerViewScrollListener(gridLayoutManager) {
+            @Override
+            public void onLoadMore(int page, int totalItemsCount, RecyclerView view) {
+                // Triggered only when new data needs to be appended to the list
+                // Add whatever code is needed to append new items to the bottom of the list
+                loadNextDataFromApi(page);
+            }
+        };
+        rvNews.addOnScrollListener(scrollListener);
+
+        filter = new HashMap<>();
+        filter.put("api-key", NYTIMES_SEARCH_API_KEY);
     }
 
     @Override protected void onDestroy() {
@@ -109,15 +122,15 @@ public class SearchActivity extends RxAppCompatActivity implements SearchView.On
         }
     }
 
-    @Override
-    public boolean onQueryTextSubmit(String query) {
-        // perform query here
-        Toast.makeText(this, query, Toast.LENGTH_SHORT).show();
-
-        filter = new HashMap<>();
-        filter.put("api-key", NYTIMES_SEARCH_API_KEY);
-        filter.put("q", query);
-
+    // Append the next page of data into the adapter
+    // This method probably sends out a network request and appends new data items to your adapter.
+    public void loadNextDataFromApi(int offset) {
+        // Send an API request to retrieve appropriate paginated data
+        //  --> Send the request including an offset value (i.e `page`) as a query parameter.
+        //  --> Deserialize and construct new model objects from the API response
+        //  --> Append the new data objects to the existing set of items inside the array of items
+        //  --> Notify the adapter of the new items made with `notifyItemRangeInserted()`
+        filter.put("page", Integer.toString(offset));
         Observable<ApiResponse> call = apiService.getResponse(filter);
         this.subscription = call
                 .subscribeOn(Schedulers.io()) // optional if you do not wish to override the default behavior
@@ -144,6 +157,19 @@ public class SearchActivity extends RxAppCompatActivity implements SearchView.On
                         adapter.notifyDataSetChanged();
                     }
                 });
+    }
+
+    @Override
+    public boolean onQueryTextSubmit(String query) {
+        // clear the old stream
+        newsList.clear();
+        adapter.notifyDataSetChanged(); // or notifyItemRangeRemoved
+        scrollListener.resetState();
+
+        // fetch new stream
+        filter.put("q", query);
+        filter.put("page", "0");
+        loadNextDataFromApi(0);
 
         // workaround to avoid issues with some emulators and keyboard devices firing twice if a keyboard enter is used
         // see https://code.google.com/p/android/issues/detail?id=24599

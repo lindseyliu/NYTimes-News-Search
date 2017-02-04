@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#53777A</color>
-    <color name="colorPrimaryDark">#51677A</color>
-    <color name="colorAccent">#ECD078</color>
-    <color name="simple_yellow">#ECD078</color>
-    <color name="primary_blue">#53777A</color>
+    <color name="lightBlue">#e3ebf0</color>
+    <color name="lightGrey">#c1c6c7</color>
+    <color name="colorPrimary">#81a39f</color>
+    <color name="colorPrimaryDark">#7f9194</color>
+    <color name="colorAccent">#a5baaf</color>
+
+    <color name="simpleYellow">#ECD078</color>
+    <color name="primaryBlue">#53777A</color>
 
 </resources>
