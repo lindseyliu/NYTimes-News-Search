@@ -7,7 +7,6 @@ import android.support.v4.app.DialogFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.DatePicker;
 
@@ -46,6 +45,8 @@ public class FilterDialogFragment extends DialogFragment implements DatePickerFr
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
+        getDialog().setTitle("Filter");
+        getDialog().getWindow().setTitle("Filter");
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_filter_dialog, container, false);
     }
@@ -54,12 +55,6 @@ public class FilterDialogFragment extends DialogFragment implements DatePickerFr
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         ButterKnife.bind(this, view);
-        // Get field from view
-        getDialog().setTitle(title);
-        // Show soft keyboard automatically and request focus to field
-        //mEditText.requestFocus();
-        getDialog().getWindow().setSoftInputMode(
-                WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
     }
 
     public interface FilterDialogListener {

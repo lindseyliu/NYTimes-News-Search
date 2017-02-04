@@ -3,12 +3,15 @@
               xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              tools:context="com.codepath.nytimessearch.FilterDialogFragment">
+              tools:context="com.codepath.nytimessearch.FilterDialogFragment"
+    android:orientation="vertical"
+    android:padding="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -18,7 +21,11 @@
         <Button
             android:id="@+id/btnPickDate"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="Pick a date"
+            android:background="@android:color/white"
+            android:textColor="@color/colorPrimaryDark"
+            style="?android:attr/borderlessButtonStyle"/>
 
     </LinearLayout>
 

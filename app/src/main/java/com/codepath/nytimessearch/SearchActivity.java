@@ -208,7 +208,6 @@ public class SearchActivity extends RxAppCompatActivity implements SearchView.On
 
         // fetch new stream
         filter.put("q", query);
-        filter.put("page", "0");
         loadNextDataFromApi(0);
 
         // workaround to avoid issues with some emulators and keyboard devices firing twice if a keyboard enter is used
@@ -226,6 +225,9 @@ public class SearchActivity extends RxAppCompatActivity implements SearchView.On
     @Override public void onFinishFilterDialog(String date) {
         filter.put("begin_date", date);
         if (filter.containsKey("q") && !filter.get("q").isEmpty()) {
+            newsList.clear();
+            adapter.notifyDataSetChanged(); // or notifyItemRangeRemoved
+            scrollListener.resetState();
             loadNextDataFromApi(0);
         }
     }
