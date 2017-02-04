@@ -1,5 +1,7 @@
 package com.codepath.nytimessearch;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.MenuItemCompat;
@@ -89,6 +91,17 @@ public class SearchActivity extends RxAppCompatActivity implements SearchView.On
             }
         };
         rvNews.addOnScrollListener(scrollListener);
+        ItemClickSupport.addTo(rvNews).setOnItemClickListener(
+                (recyclerView, position, v) -> {
+                    // do it
+                    String webUrl = newsList.get(position).getWebUrl();
+                    if (!webUrl.startsWith("http://") && !webUrl.startsWith("https://")) {
+                        webUrl = "http://" + webUrl;
+                    }
+                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(webUrl));
+                    startActivity(browserIntent);
+                }
+        );
 
         filter = new HashMap<>();
         filter.put("api-key", NYTIMES_SEARCH_API_KEY);
