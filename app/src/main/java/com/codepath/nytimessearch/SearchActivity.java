@@ -130,8 +130,6 @@ public class SearchActivity extends RxAppCompatActivity implements SearchView.On
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         switch (item.getItemId()) {
-            case R.id.action_settings:
-                return true;
             case R.id.action_filter:
                 showFilterDialog();
             default:
