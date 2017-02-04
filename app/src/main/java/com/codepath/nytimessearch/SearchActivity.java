@@ -1,6 +1,9 @@
 package com.codepath.nytimessearch;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
@@ -11,6 +14,7 @@ import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.codepath.nytimessearch.adapters.NewsAdapter;
 import com.codepath.nytimessearch.interfaces.ApiEndpointInterface;
@@ -22,6 +26,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.trello.rxlifecycle.components.support.RxAppCompatActivity;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -108,9 +113,16 @@ public class SearchActivity extends RxAppCompatActivity implements SearchView.On
 
     }
 
-    @Override protected void onDestroy() {
+    @Override
+    protected void onDestroy() {
         this.subscription.unsubscribe();
         super.onDestroy();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        invalidateOptionsMenu();
     }
 
     @Override
@@ -120,6 +132,12 @@ public class SearchActivity extends RxAppCompatActivity implements SearchView.On
         MenuItem searchItem = menu.findItem(R.id.action_search);
         searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
         searchView.setOnQueryTextListener(this);
+
+        if (!(isNetworkAvailable() && isOnline())) {
+            menu.findItem(R.id.action_filter).setEnabled(false);
+            searchItem.setEnabled(false);
+            Toast.makeText(this, "Network not available", Toast.LENGTH_LONG);
+        }
 
         return true;
     }
@@ -210,5 +228,23 @@ public class SearchActivity extends RxAppCompatActivity implements SearchView.On
         if (filter.containsKey("q") && !filter.get("q").isEmpty()) {
             loadNextDataFromApi(0);
         }
+    }
+
+    private Boolean isNetworkAvailable() {
+        ConnectivityManager connectivityManager
+                = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnectedOrConnecting();
+    }
+
+    public boolean isOnline() {
+        Runtime runtime = Runtime.getRuntime();
+        try {
+            Process ipProcess = runtime.exec("/system/bin/ping -c 1 8.8.8.8");
+            int     exitValue = ipProcess.waitFor();
+            return (exitValue == 0);
+        } catch (IOException e)          { e.printStackTrace(); }
+        catch (InterruptedException e) { e.printStackTrace(); }
+        return false;
     }
 }

@@ -133,7 +133,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="deaa172dc4f14d060810d926a921879350d25ed8">
+        sha1="4c3f500e4465769528c8d9ffeb9363b6e01a44c6">
         <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7e2783652702503fa0c93714e2fd035f78c69ec6/classes.dex" />
     </item>
     <item
@@ -187,7 +187,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="359eea26220cebf0e16ba6b714992ebe34dc27d5">
+        sha1="25b011dc6e543d1dd6e4fe5bde8ffd0c93eef0c9">
         <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_84f8a81c0773094303ed7260f2509b5d2d1c1817/classes.dex" />
     </item>
     <item
