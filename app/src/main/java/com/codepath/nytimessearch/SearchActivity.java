@@ -1,6 +1,7 @@
 package com.codepath.nytimessearch;
 
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
@@ -91,6 +92,8 @@ public class SearchActivity extends RxAppCompatActivity implements SearchView.On
 
         filter = new HashMap<>();
         filter.put("api-key", NYTIMES_SEARCH_API_KEY);
+
+        showFilterDialog();
     }
 
     @Override protected void onDestroy() {
@@ -121,6 +124,13 @@ public class SearchActivity extends RxAppCompatActivity implements SearchView.On
                 return super.onOptionsItemSelected(item);
         }
     }
+
+    private void showFilterDialog() {
+        FragmentManager fm = getSupportFragmentManager();
+        FilterDialogFragment filterDialog = FilterDialogFragment.newInstance("Filter");
+        filterDialog.show(fm, "fragment_filter_dialog");
+    }
+
 
     // Append the next page of data into the adapter
     // This method probably sends out a network request and appends new data items to your adapter.

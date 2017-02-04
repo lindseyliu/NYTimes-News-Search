@@ -13,7 +13,10 @@ import com.codepath.nytimessearch.R;
 import com.codepath.nytimessearch.models.Multimedium;
 import com.codepath.nytimessearch.models.News;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+import java.util.stream.Collectors;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -69,12 +72,14 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
     }
 
     private String getThumbnailUrl(List<Multimedium> mediaList) {
+        List<String> urls = new ArrayList<>();
         if (mediaList != null) {
-            for(Multimedium medium : mediaList) {
-                if ((medium.getType() != null) && (medium.getType().equals("image"))) {
-                    return medium.getUrl();
-                }
-            }
+            urls.addAll(mediaList.stream()
+                    .filter(medium -> (medium.getType() != null) &&
+                    (medium.getType().equals("image")))
+                    .map(Multimedium::getUrl)
+                    .collect(Collectors.toList()));
+            return urls.get(new Random().nextInt(urls.size()));
         }
         return "";
     }

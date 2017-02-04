@@ -3,6 +3,13 @@
       xmlns:tools="http://schemas.android.com/tools"
       tools:context="com.codepath.nytimessearch.SearchActivity">
 
+    <item
+        android:id="@+id/action_filter"
+        android:icon="@drawable/ic_action_filter"
+        app:showAsAction="ifRoom"
+        android:title="Filter">
+    </item>
+
     <item android:id="@+id/action_search"
           android:orderInCategory="5"
           android:title="Search"

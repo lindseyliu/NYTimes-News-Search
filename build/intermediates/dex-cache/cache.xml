@@ -2,310 +2,310 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="a2ed76bce1f6d38c70a3fd10ff3bb4459fc628fa">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/instant-run_7e2783652702503fa0c93714e2fd035f78c69ec6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.0.1_e3d1b9b807be819cfd63f264bcb79b7b15a2cf10.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.0.1_896fef1fa6b37f2a29f43864a0ff698341e0b073.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.0.1_190a71c0993e81539f7cc3208d245145d80570dc.jar" />
-    </item>
-    <item
-        is-multidex="false"
+        is-multidex="true"
         jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.0.1_ac7b555724c006446a5e61174383d04ebb253b13.jar" />
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.1_ac7b555724c006446a5e61174383d04ebb253b13/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/lindseyl/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.1_8046ce8096beb82eb8a17a4dc24038e9c5fafe39.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.jakewharton.rxbinding/rxbinding/0.3.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="023a79c3bbea624387e820cb2b4d5c6ba774903c">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/com.jakewharton.rxbinding-rxbinding-0.3.0_b1ada4e02867587ddbc73bc0630c1eb5f82bd835.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.0.1_dab098da20dcd2e432115ed559cdc8ac981b46f0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/lindseyl/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/retrofit-2.1.0_b1665f69c94b5b0a820b882093f7c26cf87307c9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/lindseyl/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.0/2b802460eea20f8f2ad9c08c74e0f14718e88aa9/okhttp-3.3.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/okhttp-3.3.0_2d0cff96b1247cb37988656704cfaf77322dbe29.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="387648d23376073aad30b68aab661ad10045ec84">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_84f8a81c0773094303ed7260f2509b5d2d1c1817.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/lindseyl/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.1.5/ece7b5d0870e66d8226dab6dcf47a2b12afff061/rxjava-1.1.5.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="ece7b5d0870e66d8226dab6dcf47a2b12afff061">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/rxjava-1.1.5_192a3075d95635981e46cd6b2f7fbf1eaa1fa5c3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.1_5fd0b346d9be3d3f89ffc6bf96a4d948e681d02a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/lindseyl/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.4.0/ea392375cf9ff59234a82e7928a204215ccc98cd/butterknife-annotations-8.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/butterknife-annotations-8.4.0_eb36a29d66372dd208057efce54d7baf40329f8c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.0.1_78038ed13403a289f88f49dceaca1b6384c2106c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/lindseyl/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/converter-gson-2.1.0_11e18ff349761fe4e462c76b7a808948b247bac6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/lindseyl/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/okio-1.8.0_a84523dfbc4233bedc5616a895f76563b9c7bc2f.jar" />
-    </item>
-    <item
-        is-multidex="false"
+        is-multidex="true"
         jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/io.reactivex/rxandroid/1.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="927e8ef5711b115b65b2f35495d77352be2b3c09">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/io.reactivex-rxandroid-1.2.0_557018063a1bbee2f733d8479a239a0d1f0380fc.jar" />
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/io.reactivex-rxandroid-1.2.0_557018063a1bbee2f733d8479a239a0d1f0380fc/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        is-multidex="true"
+        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_64d41d9bc7894947d573ffe25e966c435a28c3d8.jar" />
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.1_896fef1fa6b37f2a29f43864a0ff698341e0b073/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        is-multidex="true"
+        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_0b87ca769a97a130c9058cd660575c584bf43c94.jar" />
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.0.1_190a71c0993e81539f7cc3208d245145d80570dc/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.trello/rxlifecycle/0.4.0/jars/classes.jar"
+        is-multidex="true"
+        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="59a6c192085654b4fe8acf96837a6168bff94491">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/com.trello-rxlifecycle-0.4.0_80db1bf11c1b02385ddad0a56dd1ab8ee347ccbc.jar" />
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.1_78038ed13403a289f88f49dceaca1b6384c2106c/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
+        is-multidex="true"
+        jar="/Users/lindseyl/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.0.1_e8e471c7ce757948900184f1c6940d6e665eaeb9.jar" />
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.1_8046ce8096beb82eb8a17a4dc24038e9c5fafe39/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        is-multidex="true"
+        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.0.1_674091fd892d3c2d6519aa5aa1a5f7c2b4e8529a.jar" />
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.1_dab098da20dcd2e432115ed559cdc8ac981b46f0/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        is-multidex="true"
+        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.jakewharton.rxbinding/rxbinding/0.3.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.1_201e6b8bc6802ecb32ed44fd9c1bf29fedb1e361.jar" />
+        sha1="023a79c3bbea624387e820cb2b4d5c6ba774903c">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.jakewharton.rxbinding-rxbinding-0.3.0_b1ada4e02867587ddbc73bc0630c1eb5f82bd835/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.1/jars/classes.jar"
+        is-multidex="true"
+        jar="/Users/lindseyl/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.0.1_e30f801d337f8f075e20646360b8396247243ee2.jar" />
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.1.0_b1665f69c94b5b0a820b882093f7c26cf87307c9/classes.dex" />
     </item>
     <item
-        is-multidex="false"
+        is-multidex="true"
+        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="094ef76304f74fbe36b4e7405a68f0acaeda775c">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7e2783652702503fa0c93714e2fd035f78c69ec6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lindseyl/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.0/2b802460eea20f8f2ad9c08c74e0f14718e88aa9/okhttp-3.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.3.0_2d0cff96b1247cb37988656704cfaf77322dbe29/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.trello/rxlifecycle-components/0.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="daa2997352e18d00ec179cdc02ffad81bfe98480">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/com.trello-rxlifecycle-components-0.4.0_1f5419b422f96c217d39db2fc33d3fcd8559addc.jar" />
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.trello-rxlifecycle-components-0.4.0_1f5419b422f96c217d39db2fc33d3fcd8559addc/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        is-multidex="true"
+        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_fe1ef083292b3fa69ec611a04601ee32e667dc59.jar" />
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.1_201e6b8bc6802ecb32ed44fd9c1bf29fedb1e361/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/lindseyl/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/adapter-rxjava/2.1.0/693eddc23e87ab13f9cf5001707ce8e7e1d1ff01/adapter-rxjava-2.1.0.jar"
+        is-multidex="true"
+        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="693eddc23e87ab13f9cf5001707ce8e7e1d1ff01">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/adapter-rxjava-2.1.0_aa7ba6c2ad998d0faae9cef628aca3a1c1b80211.jar" />
+        sha1="5190fd805eda436bd9e1f78de3aa50ac3cb9b09c">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_84f8a81c0773094303ed7260f2509b5d2d1c1817/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.4.0/jars/classes.jar"
+        is-multidex="true"
+        jar="/Users/lindseyl/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.4.0/ea392375cf9ff59234a82e7928a204215ccc98cd/butterknife-annotations-8.4.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="a07818a1ecabdb149998823429cce555af4b9cba">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/com.jakewharton-butterknife-8.4.0_6024c8bed7a15ba14f384db33de2bf31f81b4a37.jar" />
+        sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/butterknife-annotations-8.4.0_eb36a29d66372dd208057efce54d7baf40329f8c/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/lindseyl/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar"
+        is-multidex="true"
+        jar="/Users/lindseyl/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.1.5/ece7b5d0870e66d8226dab6dcf47a2b12afff061/rxjava-1.1.5.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/gson-2.8.0_551768e52326339fc54fc6865cc9831e5f960868.jar" />
+        sha1="ece7b5d0870e66d8226dab6dcf47a2b12afff061">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/rxjava-1.1.5_192a3075d95635981e46cd6b2f7fbf1eaa1fa5c3/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        is-multidex="true"
+        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_c2c1a9853397650d04f641cd0896a691ddc54ffe.jar" />
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_64d41d9bc7894947d573ffe25e966c435a28c3d8/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/lindseyl/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.5.2/ecf534dba3a8446ce84cbb797d314763be212a68/glide-3.5.2.jar"
+        is-multidex="true"
+        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="ecf534dba3a8446ce84cbb797d314763be212a68">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/glide-3.5.2_a22508082c18e6ba494b3f2293358a40b962a2c6.jar" />
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_0b87ca769a97a130c9058cd660575c584bf43c94/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        is-multidex="true"
+        jar="/Users/lindseyl/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.0.1_cd2cc54addeaabaa64062c3d2084c46c80fa2087.jar" />
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.1.0_11e18ff349761fe4e462c76b7a808948b247bac6/classes.dex" />
     </item>
     <item
-        is-multidex="false"
+        is-multidex="true"
+        jar="/Users/lindseyl/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.8.0_a84523dfbc4233bedc5616a895f76563b9c7bc2f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.trello/rxlifecycle/0.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="59a6c192085654b4fe8acf96837a6168bff94491">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.trello-rxlifecycle-0.4.0_80db1bf11c1b02385ddad0a56dd1ab8ee347ccbc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.1_e8e471c7ce757948900184f1c6940d6e665eaeb9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.1_5fd0b346d9be3d3f89ffc6bf96a4d948e681d02a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.0.1_e30f801d337f8f075e20646360b8396247243ee2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.1_674091fd892d3c2d6519aa5aa1a5f7c2b4e8529a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="f83b00041ecfba705603fec40363416c7de69719">
-        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_fff5cf7b72a2ecfb21886224304a9753b883b2d4.jar" />
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_fff5cf7b72a2ecfb21886224304a9753b883b2d4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_fe1ef083292b3fa69ec611a04601ee32e667dc59/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_cd2cc54addeaabaa64062c3d2084c46c80fa2087/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lindseyl/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.8.0_551768e52326339fc54fc6865cc9831e5f960868/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lindseyl/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/adapter-rxjava/2.1.0/693eddc23e87ab13f9cf5001707ce8e7e1d1ff01/adapter-rxjava-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="693eddc23e87ab13f9cf5001707ce8e7e1d1ff01">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/adapter-rxjava-2.1.0_aa7ba6c2ad998d0faae9cef628aca3a1c1b80211/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lindseyl/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.5.2/ecf534dba3a8446ce84cbb797d314763be212a68/glide-3.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ecf534dba3a8446ce84cbb797d314763be212a68">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/glide-3.5.2_a22508082c18e6ba494b3f2293358a40b962a2c6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.1_e3d1b9b807be819cfd63f264bcb79b7b15a2cf10/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a07818a1ecabdb149998823429cce555af4b9cba">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.jakewharton-butterknife-8.4.0_6024c8bed7a15ba14f384db33de2bf31f81b4a37/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lindseyl/NYTimesSearch/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/Users/lindseyl/NYTimesSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_c2c1a9853397650d04f641cd0896a691ddc54ffe/classes.dex" />
     </item>
 
 </items>
